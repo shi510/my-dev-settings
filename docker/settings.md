@@ -1,4 +1,4 @@
-1. Change docker root directory  
+## 1. How to change docker root directory  
 
 Find the docker.service file.  
 ```
@@ -14,10 +14,10 @@ systemctl daemon-reload
 systemctl restart docker
 ```
 
-2. Grant docker permission to your account.  
+## 2. How to grant docker permission to your account.  
 ```
-Changes the primary group for a user.
+// Changes the primary group for a user.
 usermod -g [groupid] [userid]
-Add a supplementary groups.
+// Add a supplementary groups.
 usermod -Ga [groupid] [userid]
 ```
